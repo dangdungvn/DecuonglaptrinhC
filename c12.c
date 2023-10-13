@@ -23,4 +23,5 @@ int main()
 // ví dụ khi a = 30, b = 26
 // kiểm tra điều kiện a != b, đúng => thực hiện các câu lênh trong vòng lặp
 // a>b => a = a - b = 30 - 26 = 4 => a = 4
-//
+// b>a => b = b - a = 26 - 4 = 22 => b = 22
+// tiếp tục cho đến khi a = b => UCLN sẽ là 1 trong 2 số a,b sau khi kết thúc vòng lặp
