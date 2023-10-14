@@ -1,25 +1,39 @@
-#include<stdio.h>
-int main() {
+#include <stdio.h>
+int main()
+{
 	int t, n;
-	do {
+	do
+	{
 		printf("\nNhap vao thang: ");
 		scanf("%d", &t);
 		if (t < 1 || t > 12)
 			printf("\nDu lieu thang khong hop le. Xin kiem tra lai!");
 	} while (t < 1 || t > 12);
-	do {
+	do
+	{
 		printf("\nNhap vao nam: ");
 		scanf("%d", &n);
-		if (n < 0) {
+		if (n < 0)
+		{
 			printf("\nDu lieu nam khong hop le. Xin kiem tra lai!");
 		}
 	} while (n < 0);
-	switch (t) {
-	case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+	switch (t)
+	{
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
 		printf("\nCo 31 ngay\n");
 		break;
 
-	case 4: case 6: case 9 : case 11:
+	case 4:
+	case 6:
+	case 9:
+	case 11:
 		printf("\nCo 30 ngay\n");
 		break;
 	case 2:
@@ -27,9 +41,12 @@ int main() {
 		{
 			printf("\nCo 29 ngay !\n");
 		}
-		else {
+		else
+		{
 			printf("\nCo 28 ngay !\n");
 		}
 	}
 	getch();
 }
+// dùng cấu trúc switch case để xử lý ngày trong năm
+// các case viết liền với nhau: như so sánh || trong if else VD như 1,3,5,7,8,...

@@ -6,22 +6,26 @@
 main()
 {
 	int a, b, c, s, p, t;
+
 	do
 	{
 		printf("\n nhap a = ");
 		scanf("%d", &a);
 	} while (a <= 0);
+
 	do
 	{
 		printf("\n nhap b = ");
 		scanf("%d", &b);
 	} while (b <= 0);
+
 	do
 	{
 		printf("\n nhap c = ");
 		scanf("%d", &c);
 	} while (c <= 0);
-	if ((a < b + c) || (c > b + a) || (b > c + a))
+
+	if ((a < b + c) || (c > b + a) || (b > c + a)) // xét các điều kiện của từng tam giác
 	{
 		printf("\n day la tam giac\n");
 		if (a == b && b == c)
