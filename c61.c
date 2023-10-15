@@ -5,7 +5,7 @@
 #include <ctype.h>
 typedef struct sv
 {
-	// char masv[10];
+	// char maSv[10];
 	char hoTen[50];
 	int ns;
 	int td;
@@ -18,7 +18,7 @@ void nhap(sv sv[10], int n)
 	{
 		fflush(stdin);
 		// printf("\nnhap ma sinh vien: ");
-		// gets(sv[i].masv);
+		// gets(sv[i].maSv);
 		printf("\nnhap ho ten: ");
 		gets(sv[i].hoTen);
 		printf("\nnhap nam sinh: ");
@@ -51,7 +51,7 @@ void tim(sv sv[10], int n)
 		}
 	}
 }
-void sapxep(sv sv[10], int n)
+void sapXep(sv sv[10], int n)
 {
 	int i, j, tg;
 	for (i = 0; i < n; i++)
@@ -82,6 +82,6 @@ main()
 	nhap(sv, n);
 	xuat(sv, n);
 	tim(sv, n);
-	sapxep(sv, n);
+	sapXep(sv, n);
 	getch();
 }

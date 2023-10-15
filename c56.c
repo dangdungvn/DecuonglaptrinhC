@@ -5,8 +5,8 @@
 #include <ctype.h>
 typedef struct sv
 {
-	char masv[10];
-	char hoten[50];
+	char maSV[10];
+	char hoTen[50];
 	int td;
 } sv;
 void nhap(sv sv[10], int n)
@@ -16,9 +16,9 @@ void nhap(sv sv[10], int n)
 	{
 		fflush(stdin);
 		printf("\nnhap ma sinh vien: ");
-		gets(sv[i].masv);
+		gets(sv[i].maSV);
 		printf("\nnhap ho ten: ");
-		gets(sv[i].hoten);
+		gets(sv[i].hoTen);
 		printf("\nnhap tong diem: ");
 		scanf("%d", &sv[i].td);
 	}
@@ -27,40 +27,40 @@ void xuat(sv sv[10], int n)
 {
 	int i;
 	printf("\n danh sach sinh vien: ");
-	printf("\n masv\tHo Ten\tTong diem\n");
+	printf("\n maSV\tHo Ten\tTong diem\n");
 	for (i = 0; i < n; i++)
 	{
-		printf("%s    %s     %d\n", sv[i].masv, sv[i].hoten, sv[i].td);
+		printf("%s    %s     %d\n", sv[i].maSV, sv[i].hoTen, sv[i].td);
 	}
 }
 void tim(sv sv[10], int n)
 {
-	printf("\n sinh vien gioi:\nMasv\tHo ten\tTong diem\n");
+	printf("\n sinh vien gioi:\nmaSV\tHo ten\tTong diem\n");
 	for (int i = 0; i < n; i++)
 	{
 		if (sv[i].td >= 8)
 		{
-			printf("%s   %s   %d\n", sv[i].masv, sv[i].hoten, sv[i].td);
+			printf("%s   %s   %d\n", sv[i].maSV, sv[i].hoTen, sv[i].td);
 		}
 	}
-	printf("\n sinh vien kha:\nMasv\tHo ten\tTong diem\n");
+	printf("\n sinh vien kha:\nmaSV\tHo ten\tTong diem\n");
 	for (int i = 0; i < n; i++)
 	{
 		if ((sv[i].td >= 7) && (sv[i].td < 8))
 		{
-			printf("%s   %s   %d\n", sv[i].masv, sv[i].hoten, sv[i].td);
+			printf("%s   %s   %d\n", sv[i].maSV, sv[i].hoTen, sv[i].td);
 		}
 	}
-	printf("\n sinh vien ngu:\nMasv\tHo ten\tTong diem\n");
+	printf("\n sinh vien ngu:\nmaSV\tHo ten\tTong diem\n");
 	for (int i = 0; i < n; i++)
 	{
 		if ((sv[i].td >= 6) && (sv[i].td < 7))
 		{
-			printf("%s   %s   %d\n", sv[i].masv, sv[i].hoten, sv[i].td);
+			printf("%s   %s   %d\n", sv[i].maSV, sv[i].hoTen, sv[i].td);
 		}
 	}
 }
-void sapxep(sv sv[10], int n)
+void sapXep(sv sv[10], int n)
 {
 	int i, j, tg;
 	for (i = 0; i < n; i++)
@@ -76,10 +76,10 @@ void sapxep(sv sv[10], int n)
 		}
 	}
 	printf("\nDanh sach sinh vien sau khi duoc sap xep: \n");
-	printf("\n masv\tHo Ten\tTong diem\n");
+	printf("\n maSV\tHo Ten\tTong diem\n");
 	for (i = 0; i < n; i++)
 	{
-		printf("%s    %s     %d\n", sv[i].masv, sv[i].hoten, sv[i].td);
+		printf("%s    %s     %d\n", sv[i].maSV, sv[i].hoTen, sv[i].td);
 	}
 }
 main()
@@ -91,6 +91,6 @@ main()
 	nhap(sv, n);
 	xuat(sv, n);
 	tim(sv, n);
-	sapxep(sv, n);
+	sapXep(sv, n);
 	getch();
 }

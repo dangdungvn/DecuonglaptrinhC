@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-void nhapmang(int a[100][100], int n, int m)
+void nhapMang(int a[100][100], int n, int m)
 {
 	int i, j;
 	for (i = 0; i < n; i++)
@@ -13,7 +13,7 @@ void nhapmang(int a[100][100], int n, int m)
 		}
 	}
 }
-void inmang(int a[100][100], int n, int m)
+void inMang(int a[100][100], int n, int m)
 {
 	int i, j;
 	for (i = 0; i < n; i++)
@@ -104,18 +104,18 @@ void tong3(int a[100][100], int n, int m)
 }
 void cheo(int a[100][100], int n, int m)
 {
-	int i, j, tongc = 0;
+	int i, j, tongC = 0;
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < m; j++)
 		{
 			if (i == j)
 			{
-				tongc += a[i][j];
+				tongC += a[i][j];
 			}
 		}
 	}
-	printf("\nTong cac so tren duong cheo chinh cua mang la: %d\n", tongc);
+	printf("\nTong cac so tren duong cheo chinh cua mang la: %d\n", tongC);
 }
 main()
 {
@@ -124,8 +124,8 @@ main()
 	scanf("%d", &n);
 	printf("\n nhap so cot:");
 	scanf("%d", &m);
-	nhapmang(a, n, m);
-	inmang(a, n, m);
+	nhapMang(a, n, m);
+	inMang(a, n, m);
 	tong(a, n, m);
 	sln(a, n, m);
 	dem(a, n, m);

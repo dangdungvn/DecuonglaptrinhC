@@ -14,7 +14,7 @@ void nguoc(char *s)
 	}
 	printf("\n");
 }
-void doixung(char *s)
+void doiXung(char *s)
 {
 	int i, kt, n = strlen(s);
 	for (i = 0; i < n; i++)
@@ -58,7 +58,7 @@ void tim(char *s)
 	}
 	printf("\n so lan ky tu X xuat hien la: %d\n", dem);
 }
-void chuanhoa(char *s)
+void chuanHoa(char *s)
 {
 	int n = strlen(s);
 
@@ -112,10 +112,10 @@ int main()
 	gets(s);
 	printf("\nChuoi dao nguoc la: ");
 	nguoc(s);
-	doixung(s);
+	doiXung(s);
 	hoa(s);
 	printf("\n");
 	tim(s);
-	chuanhoa(s);
+	chuanHoa(s);
 	getch();
 }

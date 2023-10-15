@@ -47,7 +47,7 @@ void snn(int a[100], int n)
 	}
 	printf("\nSNN cua day la: %d", snn);
 }
-void sapxep(int a[100], int n)
+void sapXep(int a[100], int n)
 {
 	int i, j, tg;
 	for (i = 0; i < n; i++)
@@ -103,7 +103,7 @@ main()
 	xuat(a, n);
 	tbc(a, n);
 	snn(a, n);
-	sapxep(a, n);
+	sapXep(a, n);
 	tong(a, n);
 	dem(a, n);
 	getch();

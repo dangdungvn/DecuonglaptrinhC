@@ -13,7 +13,7 @@ void dao(char *s)
 		printf("%c", s[i]);
 	}
 }
-void doixung(char *s)
+void doiXung(char *s)
 {
 	int i, n = strlen(s), kt;
 	for (i = 0; i < n; i++)
@@ -37,7 +37,7 @@ void doixung(char *s)
 		printf("\nChuoi khong phai chuoi doi xung");
 	}
 }
-void inhoa(char *s)
+void inHoa(char *s)
 {
 	int i, n = strlen(s);
 	printf("\nChuoi in hoa: ");
@@ -58,7 +58,7 @@ void dem(char *s)
 	}
 	printf("\nChu X xuat hien %d lan", dem);
 }
-void chuanhoa(char *s)
+void chuanHoa(char *s)
 {
 	int i, j, n = strlen(s);
 	for (i = 0; i < n; i++)
@@ -109,7 +109,7 @@ main()
 	printf("\nNhap chuoi: ");
 	gets(s);
 	dao(s);
-	doixung(s);
-	inhoa(s);
-	chuanhoa(s);
+	doiXung(s);
+	inHoa(s);
+	chuanHoa(s);
 }

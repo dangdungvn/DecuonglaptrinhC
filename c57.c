@@ -6,8 +6,8 @@
 #include <string.h>
 typedef struct nv
 {
-	char manv[10];
-	char hoten[50];
+	char maNV[10];
+	char hoTen[50];
 	char p[50];
 } nv;
 void nhap(nv nv[10], int n)
@@ -17,9 +17,9 @@ void nhap(nv nv[10], int n)
 	{
 		fflush(stdin);
 		printf("\nnhap ma nhan vien: ");
-		gets(nv[i].manv);
+		gets(nv[i].maNV);
 		printf("\nnhap ho ten: ");
-		gets(nv[i].hoten);
+		gets(nv[i].hoTen);
 		printf("\nnhap phong ban: ");
 		gets(nv[i].p);
 	}
@@ -28,20 +28,20 @@ void xuat(nv nv[10], int n)
 {
 	int i;
 	printf("\n danh sach nhan vien: \n");
-	printf("\n manv\tHo Ten\tPhong ban\n");
+	printf("\n maNV\tHo Ten\tPhong ban\n");
 	for (i = 0; i < n; i++)
 	{
-		printf("%s    %s     %s\n", nv[i].manv, nv[i].hoten, nv[i].p);
+		printf("%s    %s     %s\n", nv[i].maNV, nv[i].hoTen, nv[i].p);
 	}
 }
 void tim(nv nv[10], int n)
 {
-	printf("\n nhan vien phong ke toan:\nManv\tHo ten\tPhong ban\n");
+	printf("\n nhan vien phong ke toan:\nMaNV\tHo ten\tPhong ban\n");
 	for (int i = 0; i < n; i++)
 	{
 		if (strcmp(nv[i].p, "ke toan") == 0)
 		{
-			printf("%s   %s   %s\n", nv[i].manv, nv[i].hoten, nv[i].p);
+			printf("%s   %s   %s\n", nv[i].maNV, nv[i].hoTen, nv[i].p);
 		}
 	}
 }
