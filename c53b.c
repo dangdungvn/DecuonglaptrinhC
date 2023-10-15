@@ -6,29 +6,29 @@
 #include <math.h>
 void dao(char *s)
 {
-	int i, n=strlen(s);
+	int i, n = strlen(s);
 	printf("\nChuoi sau khi duoc dau nguoc: ");
-	for(i=n-1;i>=0;i--)
+	for (i = n - 1; i >= 0; i--)
 	{
-		printf("%c",s[i]);
+		printf("%c", s[i]);
 	}
 }
 void doixung(char *s)
 {
-	int i, n=strlen(s),kt;
-	for(i=0;i<n;i++)
+	int i, n = strlen(s), kt;
+	for (i = 0; i < n; i++)
 	{
-		if(s[i]!=s[n-i-1])
+		if (s[i] != s[n - i - 1])
 		{
-			kt=0;
+			kt = 0;
 			break;
 		}
 		else
 		{
-			kt=1;
+			kt = 1;
 		}
 	}
-	if(kt==1)
+	if (kt == 1)
 	{
 		printf("\nChuoi la chuoi doi xung");
 	}
@@ -39,65 +39,67 @@ void doixung(char *s)
 }
 void inhoa(char *s)
 {
-	int i, n=strlen(s);
+	int i, n = strlen(s);
 	printf("\nChuoi in hoa: ");
-	for(i=0;i<n;i++)
+	for (i = 0; i < n; i++)
 	{
 		putchar(toupper(s[i]));
 	}
 }
 void dem(char *s)
 {
-	int i, n=strlen(s),dem=0;
-	for(i=0;i<n;i++)
+	int i, n = strlen(s), dem = 0;
+	for (i = 0; i < n; i++)
 	{
-		if(s[i]=='X')
+		if (s[i] == 'X')
 		{
 			dem++;
 		}
 	}
-	printf("\nChu X xuat hien %d lan",dem);
+	printf("\nChu X xuat hien %d lan", dem);
 }
 void chuanhoa(char *s)
 {
-	int i,j, n=strlen(s);
-	for(i=0;i<n;i++)
+	int i, j, n = strlen(s);
+	for (i = 0; i < n; i++)
 	{
-		if(s[i]==' ')
+		if (s[i] == ' ')
 		{
-			for(j=i;j<n-1;j++)
+			for (j = i; j < n - 1; j++)
 			{
-				s[j]=s[j+1];
+				s[j] = s[j + 1];
 			}
-			s[n-1]='\0';
+			s[n - 1] = '\0';
 			i--;
 			n--;
 		}
-		else break;
+		else
+			break;
 	}
-	for(i=n-1;i>=0;i--)
+	for (i = n - 1; i >= 0; i--)
 	{
-		if(s[i]==' ')
+		if (s[i] == ' ')
 		{
-			s[n-1]='\0';
+			s[n - 1] = '\0';
 			n--;
 		}
-		else break;
+		else
+			break;
 	}
-	for(i=0;i<n;i++)
+	for (i = 0; i < n; i++)
 	{
-		if((s[i]==' ')&&(s[i+1]==' '))
+		if ((s[i] == ' ') && (s[i + 1] == ' '))
 		{
-			for(j=i;j<n-1;j++)
+			for (j = i; j < n - 1; j++)
 			{
-				s[j]=s[j+1];
+				s[j] = s[j + 1];
 			}
-			s[n-1]='\0';
+			s[n - 1] = '\0';
 			i--;
 			n--;
 		}
 	}
-	s[0]=toupper(s[0]);
+	s[0] = toupper(s[0]);
 	printf("\nDay sau khi duoc chuan hoa la: ");
 	puts(s);
 }

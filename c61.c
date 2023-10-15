@@ -3,13 +3,14 @@
 #include <math.h>
 #include <stdlib.h>
 #include <ctype.h>
-struct sv
+typedef struct sv
 {
 	// char masv[10];
 	char hoTen[50];
 	int ns;
 	int td;
-};
+} sv;
+
 void nhap(sv sv[10], int n)
 {
 	int i;

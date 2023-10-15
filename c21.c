@@ -18,7 +18,7 @@ int main()
         t += i * (i + 1); // biểu thức đề bài cho là t = t + i * (i + 1)
         if (i % 2 == 1)
         {
-            p += sqrt(i);
+            p += sqrt(i); // biểu thức đề cho là tổng căn của các số lẻ
         }
     }
     printf("\n%lld\n", t);
