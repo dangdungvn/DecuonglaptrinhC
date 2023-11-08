@@ -12,16 +12,16 @@ int main()
     {
         if (b == 0) // kiem tra khi b == 0
         {
-            print("Phuong trinh vo so nghiem");
+            printf("Phuong trinh vo so nghiem");
         }
         else // kiem tra khi b != 0
         {
-            print("Phuong trinh vo nghiem");
+            printf("Phuong trinh vo nghiem");
         }
     }
     else
     {
-        print("Phuong trinh co nghiem x = %.2f", -b / a); // khi a != 0 thi hệ có nghiem x = -b/a
+        printf("Phuong trinh co nghiem x = %.2f", -b / a); // khi a != 0 thi hệ có nghiem x = -b/a
     }
     getch();
 }

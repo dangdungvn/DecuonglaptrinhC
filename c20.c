@@ -16,7 +16,7 @@ int main()
         printf("Nhap b: ");
         scanf("%d", &b);
     } while (b < 0);
-    for (int i = a; 1; i--)
+    for (int i = a; i > 1; i--)
     {
         if (a % i == 0 && b % i == 0)
         {
